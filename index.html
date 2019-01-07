@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amir's website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+<!-----form----->
+<div class="ui center aligned container" id="form_sub">
+    <form class="ui form" id="form_info">
+        <div class="field">
+            <input type="text" name="title" placeholder="Title" id="input_form">
+        </div>
+        <div class="field">
+            <textarea name="Text1" cols="40" rows="5" placeholder="Content" id="content-form"></textarea>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+
+    </form>
+</div>
+<!-----form----->
+
+<!-----radio----->
+<div class="ui center aligned container">
+    <div class="ui form">
+        <div class="inline fields">
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name='options' value="all" checked="checked">
+                    <label>All</label>
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name='options' value="comp">
+                    <label>Completed</label>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name='options' value="not-comp">
+                    <label>Not completed</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!----radi----->
+
+<div class="ui doubling stackable grid container" id="main">
+
+
+</div>
+
+</body>
+</html>

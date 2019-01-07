@@ -1,0 +1,17 @@
+.header{
+    background:deepskyblue !important;
+}
+p{
+    text-align: justify;
+}
+
+.form{
+    display: inline-block;
+    width: 700px;
+}
+
+button[type=submit]:hover{
+    background-color: blue !important;
+    color: whitesmoke !important ;
+}
+

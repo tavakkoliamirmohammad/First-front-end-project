@@ -1,20 +1,27 @@
 $(function () {
 
-    function undo() {
-
-    }
 
     $(document).on('click', '.del', function () {
         $(this).parent().parent().remove();
     });
     $(document).on('click', '.undo', function () {
-        if($(this).val() === '0'){
+        let radioVal = $("input[name='options']:checked").val();
+        if ($(this).val() === '0') {
             $(this).parent().find('p').css('text-decoration', 'line-through');
             $(this).val('1');
-        }
-        else {
+
+            if (radioVal === 'not-comp') {
+
+                $(this).parent().parent().hide();
+            }
+
+        } else if ($(this).val() === '1') {
             $(this).parent().find('p').css('text-decoration', 'none');
             $(this).val('0');
+            if (radioVal === 'comp') {
+
+                $(this).parent().parent().hide();
+            }
         }
     });
 

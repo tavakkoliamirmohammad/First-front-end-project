@@ -28,7 +28,7 @@ $(function () {
     $('input').change(function () {
 
         if (this.value === 'all') {
-            $('div').show();
+            $('body>div').show();
 
         } else if (this.value === 'comp') {
             $('p').each(function () {
